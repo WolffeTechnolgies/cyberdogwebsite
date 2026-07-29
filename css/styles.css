@@ -103,27 +103,14 @@ h1, h2, h3 { font-family: var(--font-display); }
   position: absolute;
   inset: -1px;
   pointer-events: none;
-  border-radius: 4px;
   background-repeat: no-repeat;
+  background-size: 11px 11px;
   background-image:
-    linear-gradient(var(--red-bright), var(--red-bright)),
-    linear-gradient(var(--red-bright), var(--red-bright)),
-    linear-gradient(var(--red-bright), var(--red-bright)),
-    linear-gradient(var(--red-bright), var(--red-bright)),
-    linear-gradient(var(--red-bright), var(--red-bright)),
-    linear-gradient(var(--red-bright), var(--red-bright)),
-    linear-gradient(var(--red-bright), var(--red-bright)),
-    linear-gradient(var(--red-bright), var(--red-bright));
-  background-size:
-    9px 2px, 2px 9px,
-    9px 2px, 2px 9px,
-    9px 2px, 2px 9px,
-    9px 2px, 2px 9px;
-  background-position:
-    left top, left top,
-    right top, right top,
-    left bottom, left bottom,
-    right bottom, right bottom;
+    url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 12 12'%3E%3Cpath d='M2 9 L2 2 L9 2' fill='none' stroke='%23ff2438' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E"),
+    url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 12 12'%3E%3Cpath d='M10 9 L10 2 L3 2' fill='none' stroke='%23ff2438' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E"),
+    url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 12 12'%3E%3Cpath d='M2 3 L2 10 L9 10' fill='none' stroke='%23ff2438' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E"),
+    url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 12 12'%3E%3Cpath d='M10 3 L10 10 L3 10' fill='none' stroke='%23ff2438' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E");
+  background-position: top left, top right, bottom left, bottom right;
 }
 
 .bracket-frame {
