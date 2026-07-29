@@ -54,7 +54,7 @@
         var dist = Math.sqrt(dx * dx + dy * dy);
         if (dist < LINK_DIST) {
           var alpha = (1 - dist / LINK_DIST) * 0.35;
-          ctx.strokeStyle = 'rgba(226, 24, 43, ' + alpha + ')';
+          ctx.strokeStyle = 'rgba(255, 0, 0, ' + alpha + ')';
           ctx.lineWidth = 1;
           ctx.beginPath();
           ctx.moveTo(a.x, a.y);
