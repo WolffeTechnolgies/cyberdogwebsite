@@ -161,7 +161,7 @@ input, select, textarea { font: inherit; color: inherit; }
   letter-spacing: 0.06em;
   font-size: 1.05rem;
 }
-.brand-mark { color: var(--red); display: flex; }
+.brand-mark { display: flex; }
 .brand-name { color: var(--text); }
 
 .main-nav ul { display: flex; gap: 34px; }
