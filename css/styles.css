@@ -17,7 +17,7 @@
   --red-dim: #7a0f1a;
   --red-glow: rgba(226, 24, 43, 0.35);
 
-  --font: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+  --font: 'IBM Plex Mono', ui-monospace, 'SF Mono', 'Courier New', monospace;
 
   --container: 1240px;
   --radius: 10px;
@@ -157,7 +157,7 @@ input, select, textarea { font: inherit; color: inherit; }
   display: flex;
   align-items: center;
   gap: 10px;
-  font-weight: 800;
+  font-weight: 700;
   letter-spacing: 0.06em;
   font-size: 1.05rem;
 }
@@ -268,7 +268,7 @@ input, select, textarea { font: inherit; color: inherit; }
 
 .hero-title {
   font-size: clamp(2.4rem, 6.2vw, 5rem);
-  font-weight: 800;
+  font-weight: 700;
   line-height: 1.05;
   letter-spacing: -0.02em;
   color: #fff;
@@ -373,7 +373,7 @@ input, select, textarea { font: inherit; color: inherit; }
 .section-alt { background: var(--bg-alt); }
 
 .section-head { max-width: 700px; margin-bottom: 64px; }
-.section-head h2 { font-size: clamp(1.9rem, 3.6vw, 2.7rem); font-weight: 800; letter-spacing: -0.01em; line-height: 1.15; }
+.section-head h2 { font-size: clamp(1.9rem, 3.6vw, 2.7rem); font-weight: 700; letter-spacing: -0.01em; line-height: 1.15; }
 .section-lede { margin-top: 16px; color: var(--text-muted); font-size: 1.05rem; line-height: 1.7; }
 
 /* ===== About ===== */
@@ -402,7 +402,7 @@ input, select, textarea { font: inherit; color: inherit; }
   flex-direction: column;
   gap: 6px;
 }
-.stat-value { font-size: 2rem; font-weight: 800; color: var(--red-bright); letter-spacing: -0.01em; }
+.stat-value { font-size: 2rem; font-weight: 700; color: var(--red-bright); letter-spacing: -0.01em; }
 .stat-label { font-size: 0.82rem; color: var(--text-muted); letter-spacing: 0.04em; }
 
 /* ===== Capabilities ===== */
@@ -489,7 +489,7 @@ input, select, textarea { font: inherit; color: inherit; }
 .process-step:last-child { border-bottom: 1px solid var(--border); }
 .process-index {
   font-size: 1.6rem;
-  font-weight: 800;
+  font-weight: 700;
   color: var(--red-dim);
   font-variant-numeric: tabular-nums;
 }
