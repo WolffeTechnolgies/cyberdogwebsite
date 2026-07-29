@@ -1,10 +1,10 @@
 /* ===== Cyberdog — Design Tokens ===== */
 :root {
   --black: #000000;
-  --bg: #050505;
-  --bg-alt: #0b0b0c;
-  --surface: #111113;
-  --surface-2: #17181a;
+  --bg: #000000;
+  --bg-alt: #000000;
+  --surface: #000000;
+  --surface-2: #000000;
   --border: rgba(255, 255, 255, 0.09);
   --border-strong: rgba(255, 255, 255, 0.16);
 
@@ -260,7 +260,7 @@ h1, h2, h3 { font-family: var(--font-display); }
   justify-content: center;
   align-items: center;
   overflow: hidden;
-  background: radial-gradient(ellipse at 50% 20%, #0d0505 0%, #000000 62%);
+  background: var(--black);
 }
 
 #network-canvas {
@@ -406,6 +406,7 @@ h1, h2, h3 { font-family: var(--font-display); }
 }
 .capability-card {
   background: var(--surface);
+  border: 1px solid var(--border);
   border-radius: 6px;
   padding: 40px;
 }
@@ -613,7 +614,7 @@ h1, h2, h3 { font-family: var(--font-display); }
 }
 
 @media (max-width: 860px) {
-  .main-nav { position: fixed; top: 0; right: 0; height: 100vh; width: min(78vw, 340px); background: rgba(5,5,5,0.98); backdrop-filter: blur(16px); border-left: 1px solid var(--border); border-top: none; padding: 100px 32px 40px; transform: translateX(100%); transition: transform 0.4s var(--ease); }
+  .main-nav { position: fixed; top: 0; right: 0; height: 100vh; width: min(78vw, 340px); background: rgba(0,0,0,0.98); backdrop-filter: blur(16px); border-left: 1px solid var(--border); border-top: none; padding: 100px 32px 40px; transform: translateX(100%); transition: transform 0.4s var(--ease); }
   .main-nav.open { transform: translateX(0); }
   .main-nav ul { flex-direction: column; align-items: flex-start; gap: 26px; padding-block: 0; }
   .main-nav a { font-size: 1.05rem; }
