@@ -23,7 +23,7 @@
 <link rel="icon" type="image/png" href="assets/logo.png">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@700;800;900&family=IBM+Plex+Mono:wght@400;500;600;700&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="css/styles.css">
 
 <script type="application/ld+json">
@@ -45,35 +45,36 @@
 <div class="grain" aria-hidden="true"></div>
 
 <header class="site-header" id="site-header">
-  <div class="container header-inner">
+  <div class="container header-top">
+    <button class="nav-toggle" id="nav-toggle" aria-expanded="false" aria-controls="main-nav" aria-label="Toggle navigation menu">
+      <span></span><span></span><span></span>
+    </button>
+
     <a href="#" class="brand" aria-label="Cyberdog home">
       <span class="brand-mark" aria-hidden="true">
-        <img src="assets/logo.png" alt="" width="28" height="28">
+        <img src="assets/logo.png" alt="" width="32" height="32">
       </span>
       <span class="brand-name">CYBERDOG</span>
     </a>
 
-    <nav class="main-nav" id="main-nav" aria-label="Primary">
-      <ul>
-        <li><a href="#about">About</a></li>
-        <li><a href="#capabilities">Capabilities</a></li>
-        <li><a href="#mission">Mission</a></li>
-        <li><a href="#how-we-work">How We Work</a></li>
-        <li><a href="#contact">Contact</a></li>
-      </ul>
-      <div class="mobile-nav-cta">
-        <a href="#contact" class="btn btn-outline full-width">Contact</a>
-        <a href="https://ioc3.org/report" class="btn btn-primary full-width" target="_blank" rel="noopener noreferrer">Report a Threat</a>
-      </div>
-    </nav>
-
-    <div class="header-actions">
+    <div class="header-cta">
       <a href="https://ioc3.org/report" class="btn btn-primary" target="_blank" rel="noopener noreferrer">Report a Threat</a>
-      <button class="nav-toggle" id="nav-toggle" aria-expanded="false" aria-controls="main-nav" aria-label="Toggle navigation menu">
-        <span></span><span></span><span></span>
-      </button>
     </div>
   </div>
+
+  <nav class="main-nav" id="main-nav" aria-label="Primary">
+    <ul>
+      <li><a href="#about">About</a></li>
+      <li><a href="#capabilities">Capabilities</a></li>
+      <li><a href="#mission">Mission</a></li>
+      <li><a href="#how-we-work">How We Work</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+    <div class="mobile-nav-cta">
+      <a href="#contact" class="btn btn-outline full-width">Contact</a>
+      <a href="https://ioc3.org/report" class="btn btn-primary full-width" target="_blank" rel="noopener noreferrer">Report a Threat</a>
+    </div>
+  </nav>
 </header>
 
 <main id="main">
@@ -84,26 +85,21 @@
     <div class="hero-overlay" aria-hidden="true"></div>
     <div class="hero-grid" aria-hidden="true"></div>
 
-    <div class="container hero-layout">
-      <div class="hero-main reveal">
-        <p class="file-tag">Global Cyber Intelligence &amp; Investigations Network</p>
-        <h1 class="hero-title">Always Watching.<br>Always Listening.</h1>
-        <p class="hero-sub">Cyberdog is a global cyber intelligence and investigations organization dedicated to hunting, exposing, and dismantling cybercriminal activity wherever it hides.</p>
+    <div class="container hero-content">
+      <span class="tag-pill reveal">Global Cyber Intelligence &amp; Investigations Network</span>
+      <h1 class="hero-title reveal">Always Watching.<br>Always Listening.</h1>
+      <p class="hero-sub reveal">Cyberdog is a global cyber intelligence and investigations organization dedicated to hunting, exposing, and dismantling cybercriminal activity wherever it hides.</p>
 
-        <div class="hero-actions">
-          <a href="#about" class="btn btn-outline">Learn More</a>
-          <a href="https://ioc3.org/report" class="btn btn-danger" target="_blank" rel="noopener noreferrer">Report a Threat</a>
-        </div>
+      <div class="hero-actions reveal">
+        <a href="#about" class="btn btn-outline">Learn More</a>
+        <a href="https://ioc3.org/report" class="btn btn-danger" target="_blank" rel="noopener noreferrer">Report a Threat</a>
       </div>
 
-      <aside class="hero-directive bracket-frame reveal" aria-label="Operating directive">
-        <span class="directive-label">Operating Directive</span>
-        <ol class="directive-list">
-          <li><span class="directive-index">01</span><span>Seek</span></li>
-          <li><span class="directive-index">02</span><span>Hunt</span></li>
-          <li><span class="directive-index">03</span><span>Investigate</span></li>
-        </ol>
-      </aside>
+      <div class="hero-directive reveal">
+        <span><b>01</b> Seek</span>
+        <span><b>02</b> Hunt</span>
+        <span><b>03</b> Investigate</span>
+      </div>
     </div>
 
     <a href="#about" class="scroll-cue" aria-label="Scroll to About section">
@@ -115,45 +111,72 @@
   <section class="section" id="about" aria-labelledby="about-heading">
     <div class="container">
       <div class="section-head reveal">
-        <div class="section-index-row"><span class="file-tag">File &mdash; 01</span><span class="index-rule" aria-hidden="true"></span></div>
+        <span class="tag-pill">About Cyberdog</span>
         <h2 id="about-heading">A global intelligence network, built to protect the digital world.</h2>
-        <span class="section-watermark" aria-hidden="true">01</span>
       </div>
 
-      <div class="about-layout">
-        <div class="about-copy reveal">
-          <p>Founded in 2024, Cyberdog was built to close the gap between the speed of modern cybercrime and the resources available to stop it &mdash; a coordinated network of analysts, investigators, researchers, and technologists operating under a single, unwavering mission.</p>
-          <p>Our purpose is simple and absolute: identify digital threats, investigate cybercriminal activity, and support lawful efforts to protect individuals, organizations, and communities from harm.</p>
-          <p>We operate as a disciplined intelligence and investigations network &mdash; never vigilantes, never hackers. Every member operates within the law, guided by process, evidence, and accountability.</p>
-        </div>
+      <div class="about-copy reveal">
+        <p>Founded in 2024, Cyberdog was built to close the gap between the speed of modern cybercrime and the resources available to stop it &mdash; a coordinated network of analysts, investigators, researchers, and technologists operating under a single, unwavering mission.</p>
+        <p>Our purpose is simple and absolute: identify digital threats, investigate cybercriminal activity, and support lawful efforts to protect individuals, organizations, and communities from harm.</p>
+        <p>We operate as a disciplined intelligence and investigations network &mdash; never vigilantes, never hackers. Every member operates within the law, guided by process, evidence, and accountability.</p>
+      </div>
+    </div>
+  </section>
 
-        <div class="about-manifest bracket-frame reveal">
-          <div class="manifest-row"><span>Year Founded</span><span class="manifest-value">2024</span></div>
-          <div class="manifest-row"><span>Network Size</span><span class="manifest-value">Classified</span></div>
-          <div class="manifest-row"><span>Monitoring Posture</span><span class="manifest-value">24/7</span></div>
-          <div class="manifest-row"><span>Operational Reach</span><span class="manifest-value">Global</span></div>
+  <!-- IMPACT -->
+  <section class="section section-alt" id="impact" aria-labelledby="impact-heading">
+    <div class="container">
+      <div class="section-head reveal">
+        <span class="tag-pill">Impact</span>
+        <h2 id="impact-heading">Operating at global scale.</h2>
+      </div>
+
+      <div class="impact-grid">
+        <div class="impact-stat reveal">
+          <span class="impact-icon" aria-hidden="true">
+            <svg viewBox="0 0 40 40"><rect x="6" y="8" width="28" height="24" rx="2" fill="none" stroke="currentColor" stroke-width="1.6"/><path d="M6 16h28M13 5v6M27 5v6" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/></svg>
+          </span>
+          <span class="impact-value">2024</span>
+          <span class="impact-label">Year Founded</span>
+        </div>
+        <div class="impact-stat reveal">
+          <span class="impact-icon" aria-hidden="true">
+            <svg viewBox="0 0 40 40"><path d="M20 5 33 10v9c0 9-5.5 14.5-13 16-7.5-1.5-13-7-13-16v-9z" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"/></svg>
+          </span>
+          <span class="impact-value">Classified</span>
+          <span class="impact-label">Network Size</span>
+        </div>
+        <div class="impact-stat reveal">
+          <span class="impact-icon" aria-hidden="true">
+            <svg viewBox="0 0 40 40"><circle cx="20" cy="20" r="15" fill="none" stroke="currentColor" stroke-width="1.6"/><path d="M20 11v9l7 4" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </span>
+          <span class="impact-value">24/7</span>
+          <span class="impact-label">Monitoring Posture</span>
+        </div>
+        <div class="impact-stat reveal">
+          <span class="impact-icon" aria-hidden="true">
+            <svg viewBox="0 0 40 40"><circle cx="20" cy="20" r="15" fill="none" stroke="currentColor" stroke-width="1.6"/><path d="M5 20h30M20 5c4 4 6 9 6 15s-2 11-6 15c-4-4-6-9-6-15s2-11 6-15z" fill="none" stroke="currentColor" stroke-width="1.6"/></svg>
+          </span>
+          <span class="impact-value">Global</span>
+          <span class="impact-label">Operational Reach</span>
         </div>
       </div>
     </div>
   </section>
 
   <!-- CAPABILITIES -->
-  <section class="section section-alt" id="capabilities" aria-labelledby="capabilities-heading">
+  <section class="section" id="capabilities" aria-labelledby="capabilities-heading">
     <div class="container">
       <div class="section-head reveal">
-        <div class="section-index-row"><span class="file-tag">File &mdash; 02</span><span class="index-rule" aria-hidden="true"></span></div>
+        <span class="tag-pill">What We Do</span>
         <h2 id="capabilities-heading">Capabilities</h2>
         <p class="section-lede">Four disciplines, one mission &mdash; working together to detect, understand, and respond to digital threats.</p>
-        <span class="section-watermark" aria-hidden="true">02</span>
       </div>
 
-      <div class="capability-list">
-        <article class="capability-row reveal">
-          <span class="capability-num">01</span>
-          <div class="capability-main">
-            <h3>Cyber Intelligence</h3>
-            <p>Continuous collection and analysis of emerging threats across the digital landscape.</p>
-          </div>
+      <div class="capability-grid">
+        <article class="capability-card reveal">
+          <h3>Cyber Intelligence</h3>
+          <p>Continuous collection and analysis of emerging threats across the digital landscape.</p>
           <div class="capability-tags">
             <span>Threat Research</span>
             <span>Digital Investigations</span>
@@ -161,12 +184,9 @@
           </div>
         </article>
 
-        <article class="capability-row reveal">
-          <span class="capability-num">02</span>
-          <div class="capability-main">
-            <h3>Investigations</h3>
-            <p>Structured, evidence-based investigations into cybercriminal activity and digital harm.</p>
-          </div>
+        <article class="capability-card reveal">
+          <h3>Investigations</h3>
+          <p>Structured, evidence-based investigations into cybercriminal activity and digital harm.</p>
           <div class="capability-tags">
             <span>Cybercrime Investigations</span>
             <span>OSINT Research</span>
@@ -174,12 +194,9 @@
           </div>
         </article>
 
-        <article class="capability-row reveal">
-          <span class="capability-num">03</span>
-          <div class="capability-main">
-            <h3>Operations</h3>
-            <p>Coordinated support that turns intelligence into real-world action with trusted partners.</p>
-          </div>
+        <article class="capability-card reveal">
+          <h3>Operations</h3>
+          <p>Coordinated support that turns intelligence into real-world action with trusted partners.</p>
           <div class="capability-tags">
             <span>Field Support</span>
             <span>Incident Response</span>
@@ -187,12 +204,9 @@
           </div>
         </article>
 
-        <article class="capability-row reveal">
-          <span class="capability-num">04</span>
-          <div class="capability-main">
-            <h3>Research</h3>
-            <p>Publishing findings that raise awareness and strengthen collective defense.</p>
-          </div>
+        <article class="capability-card reveal">
+          <h3>Research</h3>
+          <p>Publishing findings that raise awareness and strengthen collective defense.</p>
           <div class="capability-tags">
             <span>Cyber Threat Reports</span>
             <span>Emerging Threats</span>
@@ -207,7 +221,7 @@
   <section class="section mission" id="mission" aria-labelledby="mission-heading">
     <div class="mission-bg" aria-hidden="true"></div>
     <div class="container mission-inner">
-      <span class="file-tag mission-tag">File &mdash; 03 / Mission Directive</span>
+      <span class="tag-pill">Mission Directive</span>
       <h2 id="mission-heading" class="mission-statement reveal">Protecting the digital world by identifying threats, uncovering criminal activity, and supporting efforts to combat cybercrime.</h2>
       <div class="mission-flags reveal" aria-hidden="true">
         <span>Anytime</span><span>Anywhere</span><span>Any Threat</span>
@@ -219,10 +233,9 @@
   <section class="section" id="how-we-work" aria-labelledby="how-heading">
     <div class="container">
       <div class="section-head reveal">
-        <div class="section-index-row"><span class="file-tag">File &mdash; 04</span><span class="index-rule" aria-hidden="true"></span></div>
+        <span class="tag-pill">Our Process</span>
         <h2 id="how-heading">How We Work</h2>
         <p class="section-lede">A disciplined, repeatable process &mdash; from first signal to lawful action.</p>
-        <span class="section-watermark" aria-hidden="true">04</span>
       </div>
 
       <ol class="timeline">
@@ -254,9 +267,8 @@
   <section class="section contact" id="contact" aria-labelledby="contact-heading">
     <div class="container">
       <div class="section-head reveal">
-        <div class="section-index-row"><span class="file-tag">File &mdash; 05</span><span class="index-rule" aria-hidden="true"></span></div>
+        <span class="tag-pill">Contact &amp; Reporting</span>
         <h2 id="contact-heading">Reach the Cyberdog network.</h2>
-        <span class="section-watermark" aria-hidden="true">05</span>
       </div>
 
       <div class="contact-grid">
