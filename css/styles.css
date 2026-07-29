@@ -556,6 +556,7 @@ h1, h2, h3 { font-family: var(--font-display); }
 .contact-form {
   background: var(--surface);
   border: 1px solid var(--border);
+  border-radius: 8px;
   padding: 36px;
   display: flex;
   flex-direction: column;
