@@ -21,6 +21,22 @@
     });
   });
 
+  function animateCount(el) {
+    var target = parseInt(el.dataset.target, 10);
+    if (isNaN(target)) return;
+    var suffix = el.dataset.suffix || '';
+    var duration = 1400;
+    var start = null;
+    function step(ts) {
+      if (!start) start = ts;
+      var progress = Math.min((ts - start) / duration, 1);
+      var eased = 1 - Math.pow(1 - progress, 3);
+      el.textContent = Math.round(eased * target) + suffix;
+      if (progress < 1) requestAnimationFrame(step);
+    }
+    requestAnimationFrame(step);
+  }
+
   var revealEls = document.querySelectorAll('.reveal');
   if ('IntersectionObserver' in window) {
     var io = new IntersectionObserver(function (entries) {
@@ -28,6 +44,8 @@
         if (entry.isIntersecting) {
           entry.target.style.transitionDelay = (i % 6) * 60 + 'ms';
           entry.target.classList.add('is-visible');
+          var counter = entry.target.querySelector('.impact-value[data-target]');
+          if (counter) animateCount(counter);
           io.unobserve(entry.target);
         }
       });
@@ -35,6 +53,9 @@
     revealEls.forEach(function (el) { io.observe(el); });
   } else {
     revealEls.forEach(function (el) { el.classList.add('is-visible'); });
+    document.querySelectorAll('.impact-value[data-target]').forEach(function (el) {
+      el.textContent = el.dataset.target + (el.dataset.suffix || '');
+    });
   }
 
   var form = document.getElementById('contact-form');
