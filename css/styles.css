@@ -328,25 +328,6 @@ h1, h2, h3 { font-family: var(--font-display); }
   margin-top: 40px;
 }
 
-.hero-directive {
-  display: flex;
-  margin-top: 52px;
-  border: 1px solid var(--border);
-  border-radius: 4px;
-  overflow: hidden;
-}
-.hero-directive span {
-  padding: 14px 26px;
-  font-size: 0.82rem;
-  font-weight: 700;
-  letter-spacing: 0.1em;
-  text-transform: uppercase;
-  color: var(--text-muted);
-  border-right: 1px solid var(--border);
-}
-.hero-directive span:last-child { border-right: none; }
-.hero-directive span b { color: var(--red-bright); margin-right: 8px; }
-
 .scroll-cue {
   position: absolute;
   bottom: 28px;
@@ -397,7 +378,7 @@ h1, h2, h3 { font-family: var(--font-display); }
 /* ===== Impact ===== */
 .impact-grid {
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
+  grid-template-columns: repeat(3, 1fr);
   gap: 32px;
   text-align: center;
 }
@@ -644,9 +625,6 @@ h1, h2, h3 { font-family: var(--font-display); }
   .section { padding-block: 84px; }
   .hero-actions { flex-direction: column; width: 100%; }
   .hero-actions .btn { width: 100%; }
-  .hero-directive { flex-direction: column; width: 100%; }
-  .hero-directive span { border-right: none; border-bottom: 1px solid var(--border); text-align: center; }
-  .hero-directive span:last-child { border-bottom: none; }
   .impact-grid { grid-template-columns: 1fr 1fr; }
   .timeline { grid-template-columns: 1fr; row-gap: 36px; }
   .mission-flags { flex-direction: column; width: 100%; max-width: 260px; margin-inline: auto; }
