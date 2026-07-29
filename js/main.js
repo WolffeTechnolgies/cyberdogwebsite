@@ -58,6 +58,17 @@
     });
   }
 
+  var reasonSelect = document.getElementById('reason');
+  var reportModal = document.getElementById('report-modal');
+  if (reasonSelect && reportModal && typeof reportModal.showModal === 'function') {
+    reasonSelect.addEventListener('change', function () {
+      if (reasonSelect.value === 'report') {
+        reasonSelect.value = '';
+        reportModal.showModal();
+      }
+    });
+  }
+
   var form = document.getElementById('contact-form');
   var status = document.getElementById('form-status');
   form.addEventListener('submit', function (e) {
