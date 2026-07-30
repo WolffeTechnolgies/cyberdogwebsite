@@ -408,13 +408,13 @@ h1, h2, h3 { font-family: var(--font-display); }
 .impact-icon {
   width: 64px; height: 64px;
   border-radius: 50%;
-  border: 2px solid rgba(255, 255, 255, 0.32);
+  border: 3px solid rgba(255, 255, 255, 0.45);
   display: flex;
   align-items: center;
   justify-content: center;
   color: var(--text);
 }
-.impact-icon svg { width: 28px; height: 28px; }
+.impact-icon svg { width: 32px; height: 32px; }
 .impact-value { font-family: var(--font-display); font-size: 1.7rem; font-weight: 800; color: #fff; }
 .impact-label { font-size: 0.68rem; color: var(--text-muted); letter-spacing: 0.02em; }
 
