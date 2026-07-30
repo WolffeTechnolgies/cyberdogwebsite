@@ -408,7 +408,7 @@ h1, h2, h3 { font-family: var(--font-display); }
 .impact-icon {
   width: 64px; height: 64px;
   border-radius: 50%;
-  border: 3px solid rgba(255, 255, 255, 0.45);
+  border: 3px solid #ffffff;
   display: flex;
   align-items: center;
   justify-content: center;
